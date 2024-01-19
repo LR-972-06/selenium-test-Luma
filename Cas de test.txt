@@ -1,0 +1,6 @@
+Faire les tests avec ces cas de tests suivants pour la vérification : 
+- create account
+- login
+- add items to basket avec assert
+- modification du panier avec assert
+- logout

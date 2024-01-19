@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-01-19T09:55:09.501929" rpa="false" schemaversion="5">
+<suite id="s1" name="robot-Luma" source="C:\Users\formation\Desktop\RobotFramework\robotLuma\robot-Luma.robot">
+<test id="s1-t1" name="Luma Test" line="26">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-01-19T09:55:09.677397" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<arg>https://www.google.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-19T09:55:09.677397" elapsed="3.439807"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-01-19T09:55:13.117204" elapsed="0.121997"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>30 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-01-19T09:55:13.240208" elapsed="0.000996"/>
+</kw>
+<kw name="login">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:55:13.241204" level="INFO">Opening url 'https://magento.softwaretestingboard.com/customer/account/'</msg>
+<arg>https://magento.softwaretestingboard.com/customer/account/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-01-19T09:55:13.241204" elapsed="3.088407"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:55:16.331628" level="INFO">Clicking element 'id=email'.</msg>
+<arg>id=email</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:55:16.330626" elapsed="0.196626"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:55:16.528252" level="INFO">Typing text 'whilea----h@gmail.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:55:16.527252" elapsed="0.168416"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:55:16.696681" level="INFO">Clicking element 'id=pass'.</msg>
+<arg>id=pass</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:55:16.696681" elapsed="0.047969"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:55:16.745890" level="INFO">Typing text '6NydKnDJRVqC*cw' into text field 'id=pass'.</msg>
+<arg>id=pass</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:55:16.744650" elapsed="0.062589"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:55:16.808245" level="INFO">Clicking button 'id=send2'.</msg>
+<arg>id=send2</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:55:16.807239" elapsed="3.576420"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2024-01-19T09:55:13.241204" elapsed="7.142455"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-19T09:55:30.409507" level="INFO">Slept 10 seconds.</msg>
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-19T09:55:20.409273" elapsed="10.000234"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:55:30.588591" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="robotLuma/screenshotsLuma/login.png"&gt;&lt;img src="robotLuma/screenshotsLuma/login.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>robotLuma/screenshotsLuma/login.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-01-19T09:55:30.410558" elapsed="0.178033"/>
+</kw>
+<kw name="Items to cart">
+<msg time="2024-01-19T09:55:30.590592" level="FAIL">Keyword 'Items to cart' expected 8 arguments, got 0.</msg>
+<status status="FAIL" start="2024-01-19T09:55:30.589587" elapsed="0.001005">Keyword 'Items to cart' expected 8 arguments, got 0.</status>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<arg>robotLuma/screenshotsLuma/cartItems.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2024-01-19T09:55:30.591589" elapsed="0.000000"/>
+</kw>
+<kw name="Cart edit">
+<status status="NOT RUN" start="2024-01-19T09:55:30.592583" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<arg>robotLuma/screenshotsLuma/cartEdit.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2024-01-19T09:55:30.593583" elapsed="0.000000"/>
+</kw>
+<kw name="Empty cart">
+<status status="NOT RUN" start="2024-01-19T09:55:30.594586" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<arg>robotLuma/screenshotsLuma/emptyCart.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2024-01-19T09:55:30.594586" elapsed="0.000000"/>
+</kw>
+<kw name="Logout">
+<status status="NOT RUN" start="2024-01-19T09:55:30.594586" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<arg>roboLuma/screenshotsLuma/logout.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2024-01-19T09:55:30.594586" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-01-19T09:55:30.596023" elapsed="2.578587"/>
+</kw>
+<status status="FAIL" start="2024-01-19T09:55:09.676111" elapsed="23.499537">Keyword 'Items to cart' expected 8 arguments, got 0.</status>
+</test>
+<status status="FAIL" start="2024-01-19T09:55:09.504924" elapsed="23.671685"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="robot-Luma">robot-Luma</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
